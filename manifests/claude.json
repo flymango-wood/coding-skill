@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "platform": "claude",
+  "managedRoot": "~/.claude",
+  "sources": {
+    "openspec": {
+      "type": "npm",
+      "package": "@fission-ai/openspec",
+      "version": "latest",
+      "install": "npm install -g @fission-ai/openspec@latest"
+    },
+    "superpowers": {
+      "type": "claude-plugin-marketplace",
+      "marketplace": "obra/superpowers-marketplace",
+      "plugin": "superpowers@superpowers-marketplace",
+      "install": [
+        "/plugin marketplace add obra/superpowers-marketplace",
+        "/plugin install superpowers@superpowers-marketplace"
+      ]
+    }
+  },
+  "managedAssets": [
+    {
+      "id": "apl-skill",
+      "source": ".claude/skills/apl",
+      "target": "~/.claude/skills/apl",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-init-skill",
+      "source": ".claude/skills/apl-init",
+      "target": "~/.claude/skills/apl-init",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-analyze-skill",
+      "source": ".claude/skills/apl-analyze",
+      "target": "~/.claude/skills/apl-analyze",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-analyze-review-skill",
+      "source": ".claude/skills/apl-analyze-review",
+      "target": "~/.claude/skills/apl-analyze-review",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-design-skill",
+      "source": ".claude/skills/apl-design",
+      "target": "~/.claude/skills/apl-design",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-design-frontend-skill",
+      "source": ".claude/skills/apl-design-frontend",
+      "target": "~/.claude/skills/apl-design-frontend",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-design-backend-skill",
+      "source": ".claude/skills/apl-design-backend",
+      "target": "~/.claude/skills/apl-design-backend",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-design-review-skill",
+      "source": ".claude/skills/apl-design-review",
+      "target": "~/.claude/skills/apl-design-review",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-implement-skill",
+      "source": ".claude/skills/apl-implement",
+      "target": "~/.claude/skills/apl-implement",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-code-review-skill",
+      "source": ".claude/skills/apl-code-review",
+      "target": "~/.claude/skills/apl-code-review",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-test-skill",
+      "source": ".claude/skills/apl-test",
+      "target": "~/.claude/skills/apl-test",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-archive-skill",
+      "source": ".claude/skills/apl-archive",
+      "target": "~/.claude/skills/apl-archive",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "apl-update-skill",
+      "source": ".claude/skills/apl-update",
+      "target": "~/.claude/skills/apl-update",
+      "owner": "apl",
+      "kind": "skill-directory"
+    },
+    {
+      "id": "mermaid-diagram-specialist-skill",
+      "source": ".claude/skills/mermaid-diagram-specialist",
+      "target": "~/.claude/skills/mermaid-diagram-specialist",
+      "owner": "apl",
+      "kind": "skill-directory"
+    }
+  ]
+}
